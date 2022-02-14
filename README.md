@@ -17,7 +17,7 @@
 ## Documentation
 Coming Soon
 
-## 📃 Changelog
+## Changelog
 Coming Soon
 
 
