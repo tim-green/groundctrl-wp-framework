@@ -6,3 +6,7 @@
  */
 
 $theme_version = '1.0.0';
+
+/* Theme Setup */
+require_once get_template_directory() . '/inc/setup.php'; 
+
