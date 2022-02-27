@@ -33,3 +33,10 @@ function grnd_svg_mimetype( $data = null, $file = null, $filename = null, $mimes
 add_filter( 'wp_check_filetype_and_ext', 'grnd_svg_mimetype', 10, 4 );
 
 
+// Excerpt length
+function grnd_excerpt_length( $length ) {
+	return 40;
+}
+// add_filter( 'excerpt_length', 'grnd_excerpt_length', 999 );
+
+
