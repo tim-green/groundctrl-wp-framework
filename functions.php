@@ -26,3 +26,7 @@ require_once get_template_directory() . '/inc/lib/class-wp-bootstrap-navwalker.p
 foreach ( glob( get_template_directory() . '/inc/cpt/*.php' ) as $cpt ) {
 	require_once $cpt;
 }; 
+
+/* Various global functions */
+require_once get_template_directory() . '/inc/global.php'; 
+
