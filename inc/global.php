@@ -47,3 +47,36 @@ function grnd_thumbnail_alt() {
 	echo esc_attr( $grnd_thumbnail_alt );
 }
 
+
+// Breadcrumbs
+
+function grnd_breadcrumbs() {
+
+	if ( function_exists( 'yoast_breadcrumb' ) ) {
+
+		// http://yoa.st/breadcrumbs
+		yoast_breadcrumb( '<nav class="breadcrumb mt-3">', '</nav>' );
+
+	} elseif ( function_exists( 'rank_math_the_breadcrumbs' ) ) {
+
+		// https://s.rankmath.com/breadcrumbs
+		add_filter(
+			'rank_math/frontend/breadcrumb/args',
+			function( $args ) {
+				$args = array(
+					'delimiter'   => '&nbsp;&#47;&nbsp;',
+					'wrap_before' => '<nav class="breadcrumb mt-3"><span>',
+					'wrap_after'  => '</span></nav>',
+					'before'      => '',
+					'after'       => '',
+				);
+				return $args;
+			}
+		);
+
+		rank_math_the_breadcrumbs();
+	}
+
+}
+
+
