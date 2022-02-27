@@ -22,10 +22,16 @@ if ( ! function_exists( 'grnd_styles_scripts' ) ) {
 		//Bootstrap from JSdelivr CDN
 		wp_enqueue_script( 'bootstrap',  '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', false, $theme_version, true );
 
+		wp_enqueue_script( 'grnd-scripts', get_template_directory_uri() . '/assets/build/app.min.js', false, $theme_version, true );
+
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' ); }
+
 	}
 }
 
 add_action( 'wp_enqueue_scripts', 'grnd_styles_scripts' );
+
 // Disable this action if not loading Google Fonts from their external server
 // function grnd_google_fonts_preconnect() {
 // 	echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
