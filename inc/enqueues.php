@@ -12,6 +12,10 @@ if ( ! function_exists( 'grnd_styles_scripts' ) ) {
 		// CSS
 		wp_enqueue_style( 'grnd-styles', get_template_directory_uri() . '/assets/build/app.min.css', false, $theme_version, 'all' );
 
+		// JS
+		//jQuery from JSdelivr CDN
+		wp_enqueue_script( 'jquery', '//cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js', false, $theme_version, true );
+
 	}
 }
 
