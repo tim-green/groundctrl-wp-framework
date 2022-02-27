@@ -16,6 +16,9 @@ if ( ! function_exists( 'grnd_styles_scripts' ) ) {
 		//jQuery from JSdelivr CDN
 		wp_enqueue_script( 'jquery', '//cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js', false, $theme_version, true );
 
+		//FontAwesome - Free Version
+		wp_enqueue_script( 'font-awesome', '//kit.fontawesome.com/f8466e44e0.js', false, $theme_version, true );
+
 	}
 }
 
