@@ -40,3 +40,10 @@ function grnd_excerpt_length( $length ) {
 // add_filter( 'excerpt_length', 'grnd_excerpt_length', 999 );
 
 
+// Thumbnail alt
+// Echoes the "alt" value of a post thumbnail as inserted in the media gallery
+function grnd_thumbnail_alt() {
+	$grnd_thumbnail_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
+	echo esc_attr( $grnd_thumbnail_alt );
+}
+
