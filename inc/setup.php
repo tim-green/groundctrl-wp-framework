@@ -1,5 +1,4 @@
 <?php
-
 /**
  * GroundCTRL Framework 
  * https://developer.wordpress.org/reference/functions/add_theme_support/
