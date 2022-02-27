@@ -16,3 +16,6 @@ require_once get_template_directory() . '/inc/enqueues.php';
 /* Register navmenus */
 require_once get_template_directory() . '/inc/navmenus.php'; 
 
+/* Register sidebars */
+require_once get_template_directory() . '/inc/sidebars.php'; 
+
