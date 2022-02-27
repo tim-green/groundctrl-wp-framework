@@ -13,3 +13,6 @@ require_once get_template_directory() . '/inc/setup.php';
 /* Include CSS & JavaScript */
 require_once get_template_directory() . '/inc/enqueues.php'; 
 
+/* Register navmenus */
+require_once get_template_directory() . '/inc/navmenus.php'; 
+
