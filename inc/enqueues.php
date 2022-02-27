@@ -9,6 +9,8 @@ if ( ! function_exists( 'grnd_styles_scripts' ) ) {
 
 	function grnd_styles_scripts() {
 
+		$theme_version = wp_get_theme()->get( 'Version' );
+
 		// CSS
 		wp_enqueue_style( 'grnd-styles', get_template_directory_uri() . '/assets/build/app.min.css', false, $theme_version, 'all' );
 
