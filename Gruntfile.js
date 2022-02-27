@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/build/app.min.js': [
-            'assets/js/vendor/*.js','assets/js/plugin/*.js','assets/js/**/*.js'
+            'assets/js/vendor/*.js','assets/js/plugins/*.js','assets/js/**/*.js'
           ]
         },
         options: {
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          'assets/js/**/*.js'
+          'assets/js/vendor/*.js','assets/js/plugins/*.js','assets/js/**/*.js'
         ],
         tasks: ['uglify']
       },
