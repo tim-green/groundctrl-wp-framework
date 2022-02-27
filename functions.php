@@ -19,3 +19,6 @@ require_once get_template_directory() . '/inc/navmenus.php';
 /* Register sidebars */
 require_once get_template_directory() . '/inc/sidebars.php'; 
 
+/* Nav Walker */
+require_once get_template_directory() . '/inc/lib/class-wp-bootstrap-navwalker.php'; 
+
