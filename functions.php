@@ -38,3 +38,7 @@ require_once get_template_directory() . '/inc/integrations/acf.php';
 
 /* Search results filter */
 // require_once get_template_directory() . '/inc/searchfilter.php'; 
+
+/* Cleanup */
+require_once get_template_directory() . '/inc/cleanup.php'; 
+
