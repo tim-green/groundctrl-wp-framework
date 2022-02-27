@@ -30,3 +30,6 @@ foreach ( glob( get_template_directory() . '/inc/cpt/*.php' ) as $cpt ) {
 /* Various global functions */
 require_once get_template_directory() . '/inc/global.php'; 
 
+/* ACF integration */
+require_once get_template_directory() . '/inc/integrations/acf.php'; 
+
