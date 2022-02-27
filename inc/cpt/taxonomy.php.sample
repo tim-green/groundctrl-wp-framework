@@ -22,7 +22,7 @@ if ( ! function_exists('grnd_tax_sample') ) {
         
         $args = array(
 
-            // --- Labels ---
+            // Labels
 
             'labels'                     => array(
                 'name'                       => _x( 'Custom Taxonomy Samples', 'Taxonomy General Name', 'groundctrl' ),
@@ -47,7 +47,7 @@ if ( ! function_exists('grnd_tax_sample') ) {
                 // 'items_list_navigation'      => __( 'Items list navigation', 'groundctrl' ),
             ),
 
-            // --- Options ---
+            // Options
 
             'public'                => true,
             'publicly_queryable'    => true,
@@ -58,7 +58,7 @@ if ( ! function_exists('grnd_tax_sample') ) {
                 // 'hierarchical'  => false,
             ),
 
-            // --- Admin UI ---
+            // Admin UI
 
             'show_ui'               => true,
             'show_admin_column'     => false,
@@ -66,7 +66,7 @@ if ( ! function_exists('grnd_tax_sample') ) {
             'show_tagcloud'         => true,
             'show_in_quick_edit'    => true,
             
-            // --- Capabilities ---
+            // Capabilities
 
             // 'capabilities'  => array(
             //     'manage_terms'  => 'manage_categories',
@@ -75,7 +75,7 @@ if ( ! function_exists('grnd_tax_sample') ) {
             //     'assign_terms'  => 'edit_posts',
             // ),
 
-            // --- REST API ---
+            // REST API
 
             'show_in_rest'          => true,
             // 'rest_base'             => $slug,
