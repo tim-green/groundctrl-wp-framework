@@ -1,13 +1,15 @@
 /*!
-
-  This is the core import file. Section your Sass stylesheets according to the below structure for a nice flow.
+  This is the core import file for GroundCTRL Framework
+  WP Framework by TimGreen
+  Section the Sass stylesheets 
+  according to the below structure for a nice flow.
 
 */
 
 
 /*
 
- ==== Bootstrap Import ====
+ Bootstrap Import
 
 */
 
@@ -15,20 +17,22 @@
 
 /*
 
- ==== modules ====
+ modules
 
 */
 
 
 @import "modules/mixins";
 @import "modules/variables";
-//@import "modules/wp-default";
+
 @import "modules/base";
 @import "modules/typography";
+//@import "modules/wp-default";
 //@import "modules/themes";
+
 /*
 
- ==== Plugins ====
+ Plugins
 
 */
 
@@ -36,7 +40,7 @@
 
 /*
 
- ==== Components ====
+ Components
 
 */
 
@@ -47,7 +51,7 @@
 
 /*
 
- ==== Sections ====
+ Sections
 
 */
 
@@ -58,6 +62,6 @@
 
 /*
 
- ==== Pages ====
+ Pages
 
 */
