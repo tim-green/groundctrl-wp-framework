@@ -5,7 +5,7 @@
  *  https://developer.wordpress.org/themes/basics/theme-functions/
  */
 
-$theme_version = '1.0.0';
+//$theme_version = '1.0.0';
 
 /* Theme Setup */
 require_once get_template_directory() . '/inc/setup.php'; 
@@ -44,3 +44,5 @@ require_once get_template_directory() . '/inc/cleanup.php';
 
 /* Custom user functions */
 require_once get_template_directory() . '/inc/custom.php'; 
+
+
